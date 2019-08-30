@@ -4,7 +4,7 @@ def main():
     origin_inside = 0
     origin_outside = 0
     for coords in read_txt_file("triangles.txt"):
-        ## calculate all the trinagle areas
+        ## calculate all the triangle areas
         tri_area = area_of_triangle(coords)
         origin = [0,0]
         sub_tri1 = area_of_triangle(origin + coords[2:])
